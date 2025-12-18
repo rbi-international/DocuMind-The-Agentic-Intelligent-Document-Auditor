@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "documind"
+version = "0.0.1"
+description = "A professional Agentic AI Document App"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "rbi-international", email = "your-email@example.com"}
+]
+keywords = ["Agentic AI", "NLP", "LLM", "MLOps"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pandas",
+    "numpy",
+    "pyyaml",
+    "ensure",
+    "python-box",
+    "joblib",
+    "mlflow",
+    "dvc",
+    "transformers",
+    "accelerate",
+    "peft",
+    "bitsandbytes",
+    "datasets",
+    "langchain",
+    "fastapi",
+    "uvicorn"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rbi-international/DocuMind-The-Agentic-Intelligent-Document-Auditor"
+"Bug Tracker" = "https://github.com/rbi-international/DocuMind-The-Agentic-Intelligent-Document-Auditor/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

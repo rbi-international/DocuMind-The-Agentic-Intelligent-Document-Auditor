@@ -1,0 +1,47 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+pyyaml
+python-dotenv
+ensure
+python-box
+joblib
+types-PyYAML
+mlflow
+dvc
+dvc-s3
+dagshub
+
+# --- Deep Learning ---
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+peft
+bitsandbytes
+datasets
+safetensors
+sentencepiece
+
+# --- LangChain Ecosystem (The Fix) ---
+langchain
+langchainhub
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+langgraph
+
+# --- Vector DB ---
+chromadb
+sentence-transformers
+
+# --- Backend ---
+fastapi
+uvicorn
+python-multipart
+pydantic
+typing-extensions

@@ -1,0 +1,3 @@
+COLUMNS:
+  text: object
+  label: int64
