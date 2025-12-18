@@ -1,0 +1,1 @@
+# DocuMind-The-Agentic-Intelligent-Document-Auditor
