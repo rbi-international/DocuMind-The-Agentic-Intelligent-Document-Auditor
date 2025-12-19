@@ -141,15 +141,16 @@ Evaluation: Logs accuracy to MLflow.
 The system requires two terminals to simulate a Microservices architecture.
 Terminal 1: The Backend (FastAPI)
 This loads the AI models into GPU memory.
-code
-Bash
+```
+```Bash
 conda activate documind
 python app.py
 Status: API will run on http://0.0.0.0:8000
 Terminal 2: The Frontend (Streamlit)
 This launches the user interface.
-code
-Bash
+```
+
+```Bash
 conda activate documind
 streamlit run streamlit_app.py
 Status: Dashboard will open at http://localhost:8501
@@ -165,3 +166,4 @@ This project is licensed under the MIT License.
 Author: [Rohit Bharti]
 Contact: [rohit.bharti8211@gmail.com]
 LinkedIn: [https://www.linkedin.com/in/rohitbharti13/]
+```
