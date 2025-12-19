@@ -96,32 +96,26 @@ DocuMind-Agent/
 ├── dvc.yaml                    # DVC Pipeline definitions
 ├── requirements.txt            # Project Dependencies
 └── pyproject.toml              # Build System Requirements
-
----
-
 🚀 Installation & Setup
 Prerequisites
 OS: Windows (with WSL2 recommended) or Linux.
 GPU: NVIDIA GPU with at least 6GB VRAM.
 Drivers: CUDA 12.1 or compatible.
-
----
-
-# 1. Clone & Environment
-
-git clone https://github.com/rbi-international/DocuMind-The-Agentic-Intelligent-Document-Auditor.git
-cd DocuMind-The-Agentic-Intelligent-Document-Auditor
-
+1. Clone & Environment
 
 ```bash
+git clone https://github.com/rbi-international/DocuMind-The-Agentic-Intelligent-Document-Auditor.git
+cd DocuMind-The-Agentic-Intelligent-Document-Auditor
+```
+
 # Create a clean Python 3.11 environment
+```bash
 conda create -n documind python=3.11 -y
 conda activate documind
 ```
-
 2. Install Dependencies
 We separate PyTorch installation to ensure the correct CUDA version is used.
-code
+
 ```Bash
 # 1. Install GPU-enabled PyTorch
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
@@ -131,9 +125,10 @@ pip install -r requirements.txt
 
 # 3. Install Local Package
 pip install -e .
+```
 🧠 Training the Specialist Tool
 Before the Agent can work, the DistilBERT tool must be trained.
-```
+
 ```Bash
 python main.py
 This executes the MLOps pipeline:
@@ -146,15 +141,15 @@ Evaluation: Logs accuracy to MLflow.
 The system requires two terminals to simulate a Microservices architecture.
 Terminal 1: The Backend (FastAPI)
 This loads the AI models into GPU memory.
-```
-```Bash
+code
+Bash
 conda activate documind
 python app.py
 Status: API will run on http://0.0.0.0:8000
 Terminal 2: The Frontend (Streamlit)
 This launches the user interface.
-```
-```Bash
+code
+Bash
 conda activate documind
 streamlit run streamlit_app.py
 Status: Dashboard will open at http://localhost:8501
@@ -165,11 +160,8 @@ Dockerization: Create a Dockerfile and docker-compose.yml to orchestrate the Bac
 CI/CD: Implement GitHub Actions to auto-run tests (pytest) upon push.
 Model Drift Monitoring: Use Evidently AI to detect if incoming legal documents differ significantly from the training data (LEDGAR).
 Quantization Optimization: Explore AWQ or GPTQ for faster inference speeds on edge devices.
-```
-```bash
 📜 License
 This project is licensed under the MIT License.
-Author: Rohit Bharti
-Contact: rohit.bharti8211@gmail.com
-Linkedin: https://www.linkedin.com/in/rohitbharti13/
-```
+Author: [Rohit Bharti]
+Contact: [rohit.bharti8211@gmail.com]
+LinkedIn: [https://www.linkedin.com/in/rohitbharti13/]
