@@ -109,10 +109,9 @@ Drivers: CUDA 12.1 or compatible.
 
 # 1. Clone & Environment
 
-```bash 
 git clone https://github.com/rbi-international/DocuMind-The-Agentic-Intelligent-Document-Auditor.git
 cd DocuMind-The-Agentic-Intelligent-Document-Auditor
-```
+
 
 ```bash
 # Create a clean Python 3.11 environment
@@ -170,7 +169,7 @@ Quantization Optimization: Explore AWQ or GPTQ for faster inference speeds on ed
 ```bash
 📜 License
 This project is licensed under the MIT License.
-Author: [Rohit Bharti]
-Contact: [rohit.bharti8211@gmail.com
-Linkedin: [https://www.linkedin.com/in/rohitbharti13/]
+Author: Rohit Bharti
+Contact: rohit.bharti8211@gmail.com
+Linkedin: https://www.linkedin.com/in/rohitbharti13/
 ```
